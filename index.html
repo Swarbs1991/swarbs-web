@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Swarbs - Joe Swarbrick's Portfolio</title>
+		<meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta name="description" content="Joe Swarbrick's brand new shiney portfolio site" />
+		<meta name="keywords" content="Joe Swrbrick portfolio, web developemnt portfolio, front-end web development, developer, user interface, UI, user experience, UX, web design, fluid design, design portfolio" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="background-wrapper">
+			<div id="header">
+				<a href="index.html"><img class="logo" src="images/swarbssmoked.png" alt="Swarbs Smoked Logo"></a>
+				<button class="menu-btn">
+					<div class="menu-btn__burger"></div>
+				</button>
+				<nav id="main">
+					<li class="about-me">About Me</li>
+					<li class="about-site">About the Site</li>
+					<li class="web-work">Websites</li>
+					<li class="design-work">Design Work</li>
+					<li class="cv">Curriculum Vitae</li>
+				</nav>
+			</div>
+			<canvas id="canvas"></canvas>
+			
+			<div class='text-animation-container'>
+				<span id='text'></span>
+				<div class='underscore' id='hero'>&#95;</div>
+			</div>
+			
+			<div class="blurb hidden">
+				<p>I created this site for me to showcase some of the work I’ve done, 
+				snippets of code as well as using for a platform for new ideas for design and user interface.</p>
+			</div>
+			
+			<div id="about-me" class="section one">
+				<div class="col one pic">
+					<img src="images/me-1.jpg">
+				</div>
+				<div class="col two text">
+					<h2>A Bit About Me</h2>
+					<p>My name is Joe and I'm a front-end web developer with a passion for creating bold, striking graphics
+					and fun user interfaces that I try to combine to give a completely unique user experience.
+					<br><br>
+					This website will be an ongoing project for me to have some fun with, as well as showcase a bit of
+					my work from past jobs as well as things I've enjoyed producing in my down-time.
+					<br><br>
+					I love working in Notepad++ to code simple sites like this one from scratch using HTML5, CSS3, and some simple Javascript (mainly JQuery).
+					<br><br>However, much of my time over the past few years has been spent working with content management systems.
+					WordPress is where I feel most at home though, writing custom queries in PHP and using tools like Visual Studio to compile Sass to SCSS
+					and then test it all locally using Xampp to create virtual Linux servers.
+					<br><br>
+					I also have experience with Joomla, but most recently Shopify where in my current job (as well as other more design based responsibilites)
+					I look after the website as well as do a little development here and there to make additions to the existing UI of the stock theme.
+					<br><br>
+					Anyway, there are a million combinations of languages and technologies which can be used, but the key is to achieve the desired result, 
+					cleanly and efficiently with whatever tools are appropriate.
+					<br><br>
+					Thanks for dropping by, Please enjoy this site and comment if you like. I shall be adding more content as time goes on.
+					</p>
+				</div>
+			</div>
+			
+			<div id="about-site" class="section two">
+				<div class="col text">
+					<h2>A Bit About This Site</h2>
+					<p>The plan was to make something eye-catching and inherently intuitive to navigate, but also really simple.
+					<br><br>
+					I made this website using Notepad++ and testing locally before I had enough content to put online, although I intend this
+					to be an ongoing project, something I update regularly and can also use as a platform to to test out new ideas.
+					<br><br>
+					As much as I love WordPress, seeing as I don't intend on running a blog or having a massive media library the files that form this website are kept to a minimum.<br>
+					The majority of this is simple markup, CSS3 and a little bit of Javascript (JQuery specifally) for the navigation. My bread and butter.
+					<br><br>
+					For some of the aesthetics I looked to use CSS transitions, like the colour changing background and also for visual feedback with the navigation.
+					<br><br>
+					I also adapted some Javascript to use in the background to add to the visuals, as I didn't want the site to feel static.
+					<br> The Javascript makes use of HTML5 Canvas and a basically just changed the variables to suit what I wanted.
+					<br>
+					The original example of this from Dudley Storey can be found <a href="https://codepen.io/dudleystorey/pen/NbNjjX" title="Original Code on CodePen" target="blank">here on <b class="pen">CodePen</b></a>
+				</div>
+			</div>
+			
+			<div id="web-work" class="section three">
+				<div class="site-list">
+					<li class="LS secrets">Little Secrets<div class="plus"></div></li>
+						<div class="LS col collapsible">
+							<img src="images/LS-web-logo_transparent-bg.png" alt="Little Secrets Clothing Web Logo">
+							<h2>littlesecretsclothing.co.uk</h2>
+							<p>The Little Secrets website is hosted on the Shopify ecommerce platform.
+							<br><br>
+							Recently last year I implemented a new theme to bring the storefront more up to date and also run more efficiently by making use of features like Lazy Loading, 
+							but also to keep the site as up to date as possible with the latest web standards and Shopify's API.
+							<br><br>
+							My main responsibilities for this site continue to be to improve usability and site speed in a number of ways. 
+							Some of that has been done just by editing product descriptions and adding alt text to be more SEO friendly,
+							as well as optimising images for the web and also cutting down reliance on apps as much as possible by finding other simple solutions.
+							</p>
+						</div>
+					<li class="toolally">Toolally<div class="plus"></div></li>
+						<div class="toolally col collapsible">
+							<img src="images/toolally-web-logo-4.png" alt="Toolally Jewellery Web Logo">
+							<h2>toolally.com</h2>
+							<p>Toolally Jewellery is the successful jewellery brand and sister company to the fabl.
+							<br><br>
+							This was my first brush with an e-commerce platform. The website was built in WordPress and uses WooCommerce to power it's storefront.
+							<br><br>
+							This website was always getting new content and I was tasked with everything from adding new media content produced by the design team, 
+							improving the overall UI and UX by making changes to the function and styling of the navigation and implementing filters on the collection pages, 
+							to migrating the website to a Virtual Private Server along with a host of other changes to improve site speed and performance.
+							</p>
+						</div>
+					<li class="fabl">The Fabl<div class="plus"></div></li>
+						<div class="fabl col collapsible">
+							<img src="images/fabl-logo.jpg" alt="the fabl Web Logo">
+							<h2>thefabl.com</h2>
+							<p>The fabl was the website of one of my previous employers, a 'full content' marketing agency based in Broughton, Skipton in North Yorkshire.
+							<br><br>
+							The site was mainly used to showcase work from clients' projects as well as give prospective clients an introduction to the team.
+							<br><br>
+							However, the hompeage of the website was more focused on highlighting the company's USP: their ability to tell a story, enabling them to construct a complete marketing package for clients,
+							with glossy print products crammed with striking graphics and photos, along with social media, blogging and also responsive, intuitive websites.
+							<br><br>
+							thefabl.com was built by a company called Gooey. As it was already a well established site, I inherited responsisbilities
+							like posting articles on the blog and adding case studies written by our copywrighters, along with adding any new members of staff on the 'Who We Are' page.
+							<br><br>
+							My favourite part of working on this site was when I was tasked with implementing design changes on the homepage.
+							<br>
+							Here I worked closely with the design team to add in their graphics into each section (after some web optimisation),
+							piece by piece I added in separate graphics and animated them to match the intended effect as instructed by the head designer.
+							<br><br>
+							This was the first time (commercially) where I had the opportunity to animate images and elements, combining CSS3 and JQuery 
+							as well as reusing any of Gooey's code to ensure nothing left was redundant.
+							<br><br>
+							I really enjoyed it.
+							</p>
+						</div>
+					<li class="bay">The Bay Horse Inn<div class="plus"></div></li>
+						<div class="bay col collapsible">
+							<img src="images/BH-NEW-TITLING_Main.svg" alt="The Bay Horse Roughlee Web Logo">
+							<h2>The Bay Horse Inn, Roughlee</h2>
+							<p>As part owner of the family business, when we got the tenancy for the Bay Horse I quickly set my skill with design and web development 
+							to the task of starting to build a brand and online presence.
+							<br><br>
+							I had complete oversight of any designs, from logo and brand development, to print media and the practical aspects of setting up the website and social media.
+							<br><br>
+							The pub had been shut for years after the last tenant suffered a serious fire, so as well as promote our food and drink, it was imperative to publish that the pub was actually open again as widely as possible.
+							<br><br>
+							The website was initally built like this one - a really simple site, written eniterly in Notepadd++.
+							<br>I later redid the site during the first lockdown in 2020 and opted for WordPress.
+							<br><br>
+							The theme I used was a barebones theme that I developed using PHP, Sass and some Javascript and tested offline using Xampp.
+							<br>
+							The main function of the site didn't change at all. We still used it to advertise our presence as well as show off photos of food, drink and events, 
+							but installing WordPress meant we had a much easier platform to delligate adding media and editing copy among the rest of the family.
+							<br><br>
+							As we have now left the Bay Horse, we have reverted the site just back to just one page - a goodbye, thanking our staff and customers
+							and wishing the new tenants well, but you can see an earlier (offline) version hidden away here: COMING SOON
+							</p>
+						</div>
+				</div>
+			</div>
+			
+			<div id="design-work" class="section four">
+				<div class="col text">
+					<h2>Coming Soon...</h2>
+					<p>Unfortunately this is a section of content that I still need to get together.
+					<br><br>
+					<p>I will be compiling a list of sites I've worked on a well as some examples of code I've used for certain solutions,
+					which I hope will give a bit of insight into my previous work experience.</p>
+				</div>
+			</div>
+			
+			<div id="cv" class="section five">
+				<div class="text">
+					<p>If the embedded document doesn't load, click 
+					<a href="Joe-Swarbrick_CV-2021.pdf" target="_blank" title="Joe-Swarbrick_CV-2021.pdf"><b class="pen">here</b></a>
+					to open/download in your browser.</p>
+				<object data="Joe-Swarbrick_CV-2021.pdf" type="application/pdf" class="cv-doc" width="" height="">
+			</div>
+			
+		</div>
+		
+		<footer>
+			<script src="draw-2.js"></script>
+			<script src="nav.js"></script>
+		</footer>
+	</body>
+</html>
