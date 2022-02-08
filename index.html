@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 	<head>
-		<title>Swarbs - Joe Swarbrick's Portfolio</title>
-		<meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8" />
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
 		<meta name="description" content="Joe Swarbrick's brand new shiney portfolio site" />
 		<meta name="keywords" content="Joe Swrbrick portfolio, web developemnt portfolio, front-end web development, developer, user interface, UI, user experience, UX, web design, fluid design, design portfolio" />
+		<title>Swarbs - Joe Swarbrick's Portfolio</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +19,16 @@
 			<div id="header">
 				<a href="index.html"><img class="logo" src="images/swarbssmoked.png" alt="Swarbs Smoked Logo"></a>
 				<button class="menu-btn">
-					<div class="menu-btn__burger"></div>
+					<span class="menu-btn__burger"></span>
 				</button>
 				<nav id="main">
-					<li class="about-me">About Me</li>
-					<li class="about-site">About the Site</li>
-					<li class="web-work">Websites</li>
-					<li class="design-work">Design Work</li>
-					<li class="cv">Curriculum Vitae</li>
+					<ul>
+						<li class="about-me">About Me</li>
+						<li class="about-site">About the Site</li>
+						<li class="web-work">Websites</li>
+						<li class="design-work">Design Work</li>
+						<li class="cv">Curriculum Vitae</li>
+					</ul>
 				</nav>
 			</div>
 			<canvas id="canvas"></canvas>
@@ -36,13 +39,13 @@
 			</div>
 			
 			<div class="blurb hidden">
-				<p>I created this site for me to showcase some of the work I’ve done, 
+				<p>I created this site for me to showcase some of the work I have done, 
 				snippets of code as well as using for a platform for new ideas for design and user interface.</p>
 			</div>
 			
 			<div id="about-me" class="section one">
 				<div class="col one pic">
-					<img src="images/me-1.jpg">
+					<img src="images/me-1.jpg" alt="A graphically stylised self-portait">
 				</div>
 				<div class="col two text">
 					<h2>A Bit About Me</h2>
@@ -90,9 +93,8 @@
 			
 			<div id="web-work" class="section three">
 				<div class="site-list">
-					<li class="LS secrets">Little Secrets<div class="plus"></div></li>
-						<div class="LS col collapsible">
-							<img src="images/LS-web-logo_transparent-bg.png" alt="Little Secrets Clothing Web Logo">
+						<li class="LS secrets">Little Secrets<span class="plus"></span></li>
+						<div class="LS col collapsible">								<img src="images/LS-web-logo_transparent-bg.png" alt="Little Secrets Clothing Web Logo">
 							<h2>littlesecretsclothing.co.uk</h2>
 							<p>The Little Secrets website is hosted on the Shopify ecommerce platform.
 							<br><br>
@@ -104,10 +106,9 @@
 							as well as optimising images for the web and also cutting down reliance on apps as much as possible by finding other simple solutions.
 							</p>
 						</div>
-					<li class="toolally">Toolally<div class="plus"></div></li>
+						<li class="toolally">Toolally<span class="plus"></span></li>
 						<div class="toolally col collapsible">
-							<img src="images/toolally-web-logo-4.png" alt="Toolally Jewellery Web Logo">
-							<h2>toolally.com</h2>
+							<img src="images/toolally-web-logo-4.png" alt="Toolally Jewellery Web Logo">								<h2>toolally.com</h2>
 							<p>Toolally Jewellery is the successful jewellery brand and sister company to the fabl.
 							<br><br>
 							This was my first brush with an e-commerce platform. The website was built in WordPress and uses WooCommerce to power it's storefront.
@@ -117,7 +118,7 @@
 							to migrating the website to a Virtual Private Server along with a host of other changes to improve site speed and performance.
 							</p>
 						</div>
-					<li class="fabl">The Fabl<div class="plus"></div></li>
+						<li class="fabl">The Fabl<span class="plus"></span></li>
 						<div class="fabl col collapsible">
 							<img src="images/fabl-logo.jpg" alt="the fabl Web Logo">
 							<h2>thefabl.com</h2>
@@ -142,7 +143,7 @@
 							I really enjoyed it.
 							</p>
 						</div>
-					<li class="bay">The Bay Horse Inn<div class="plus"></div></li>
+						<li class="bay">The Bay Horse Inn<span class="plus"></span></li>
 						<div class="bay col collapsible">
 							<img src="images/BH-NEW-TITLING_Main.svg" alt="The Bay Horse Roughlee Web Logo">
 							<h2>The Bay Horse Inn, Roughlee</h2>
@@ -181,9 +182,11 @@
 			<div id="cv" class="section five">
 				<div class="text">
 					<p>If the embedded document doesn't load, click 
-					<a href="Joe-Swarbrick_CV-2021.pdf" target="_blank" title="Joe-Swarbrick_CV-2021.pdf"><b class="pen">here</b></a>
-					to open/download in your browser.</p>
-				<object data="Joe-Swarbrick_CV-2021.pdf" type="application/pdf" class="cv-doc" width="" height="">
+						<a href="Joe-Swarbrick_CV-2021.pdf" target="_blank" title="Joe-Swarbrick_CV-2021.pdf"><span class="pen">here</span></a>
+						to open/download in your browser.
+					</p>
+					<object data="Joe-Swarbrick_CV-2021.pdf" type="application/pdf" class="cv-doc"></object>
+				</div>
 			</div>
 			
 		</div>

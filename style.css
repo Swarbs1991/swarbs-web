@@ -8,6 +8,11 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background: #222;
 	margin: 0rem;
@@ -203,7 +208,7 @@ li.cv:hover {
 
 .blurb p {
     font-size: 2em;
-    font-family: -webkit-pictograph;
+    font-family: monospace;
 }
 
 .section {
@@ -341,7 +346,7 @@ li.bay:hover {
     font-size: 42px;
 }
 
-b.pen {
+span.pen {
 	background: -webkit-linear-gradient(-45deg, #ff00eb, #00f3ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
