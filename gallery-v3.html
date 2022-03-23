@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta name="description" content="Joe Swarbrick's brand new shiney portfolio site" />
+		<meta name="keywords" content="Joe Swrbrick portfolio, web developemnt portfolio, front-end web development, developer, user interface, UI, user experience, UX, web design, fluid design, design portfolio" />
+		<title>Swarbs - Joe Swarbrick's Portfolio</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="background-wrapper">
+			<div id="header">
+				<a href="index.html"><img class="logo" src="images/swarbssmoked.png" alt="Swarbs Smoked Logo"></a>
+				<button class="menu-btn">
+					<span class="menu-btn__burger"></span>
+				</button>
+				<nav id="main">
+					<ul>
+						<li class="about-me">About Me</li>
+						<li class="about-site">About the Site</li>
+						<li class="web-work">Websites</li>
+						<li class="design-work">Design Work</li>
+						<li class="cv">Curriculum Vitae</li>
+					</ul>
+				</nav>
+			</div>
+			
+			<div class="gallery-v3">
+				<div data-glide-el="track" class="glide__track">
+					<ul class="glide__slides">
+						<li class="slide">
+							<img src="images/gallery/BH-NEW-TITLING_V3.svg" alt="Bay Horse Roughlee Title Logo 2020">
+						</li>
+						<li class="slide">
+							<img src="images/gallery/BH-LOGO-CLEANED-UP_black-accent.svg" alt="Horse's Head Brand Logo 2020">
+						<li class="slide">
+							<img src="images/gallery/Happy-Hour-web.jpg" alt="Happy Hour at the Bay Horse - Social Media Graphic">
+						</li>
+						<li class="slide">
+							<img src="images/gallery/Cookoff-V1-3.jpg" alt="Pizza Cookoff promo web graphic">
+						</li>
+					</ul>
+					
+					<button aria-label="Previous" class="glider-prev">«</button>
+					<button aria-label="Next" class="glider-next">»</button>
+					<div role="tablist" class="dots"></div>
+  
+				</div>
+			</div>
+			
+		</div>
+		
+		<footer>
+			<script>
+			
+					new Glider(document.querySelector('.glider'), {
+					  slidesToShow: 5,
+					  slidesToScroll: 1,
+					  draggable: true,
+					  dots: '.dots',
+					  arrows: {
+						prev: '.glider-prev',
+						next: '.glider-next'
+					  }
+					});
+
+			</script>
+		</footer>
+	</body>
+</html>
