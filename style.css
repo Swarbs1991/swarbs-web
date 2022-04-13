@@ -389,6 +389,23 @@ span.pen {
     margin: 0 auto;
 }
 
+/*** Bootstrap Slider ***/
+.carousel {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+}
+
+.carousel-item img {
+    width: 50%;
+    max-height: 400px;
+    padding: 2% 0;
+}
+
+img.cook-graph {
+    width: auto;
+}
+
 #cv .text p {
 	width: 80%;
     margin: 2% auto;
