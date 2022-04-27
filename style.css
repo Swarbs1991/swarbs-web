@@ -203,7 +203,7 @@ li.cv:hover {
     width: 60%;
     left: 0;
     margin: 0 auto;
-	transition: 2s ease-in-out;
+	transition: .2s ease-in-out;
     z-index: 999;
 }
 
