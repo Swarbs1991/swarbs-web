@@ -1,3 +1,4 @@
+//Particle Background
 let resizeReset = function() {
 	w = canvasBody.width = window.innerWidth;
 	h = canvasBody.height = window.innerHeight;
@@ -153,17 +154,7 @@ function consoleText(words, id) {
   }, 400)
 }
 
-//Blurb Fade In 
-/*
-$(document).ready(function () {
-	setTimeout(function() {
-     $('.blurb').addClass('revealup');
-	}, 7500);
-});
-*/
-
 //FadeIn onScroll
-
 $(document).ready(function() {
     $(window).scroll( function(){
         $('.fadein').each( function(i){

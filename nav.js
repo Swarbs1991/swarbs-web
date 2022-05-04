@@ -12,6 +12,10 @@ $('button.menu-btn').click(function(){
 	$('canvas').removeClass('restrain');
 });
 
+$('nav#main').click(function(){
+	$('nav#main').toggleClass('reveal');
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -21,6 +25,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+//Sticky Header
+$(window).scroll(function(){
+	if ($(window).scrollTop() >= 85){
+		$('#header').addClass("sticky-nav");
+		$('.logo').addClass("sticky-logo");
+		$('.menu-btn').addClass("sticky-btn");
+	} else {
+		$('#header').removeClass("sticky-nav");
+		$('.logo').removeClass("sticky-logo");
+		$('.menu-btn').removeClass("sticky-btn");
+	}
+});
+
+//Grey out overlay and click-off
 
 //Work Dropdowns
 $('li.LS').click(function(){
